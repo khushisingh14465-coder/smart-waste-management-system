@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoTrack - Admin Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- NAVBAR -->
+
+    <header class="dashboard-nav">
+
+        <div class="logo">
+            ♻ EcoTrack
+        </div>
+
+        <div class="user-info">
+
+            <span>
+                Administrator
+            </span>
+
+            <div class="avatar">
+                A
+            </div>
+
+            <button
+                class="logout-btn"
+                onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- DASHBOARD -->
+
+    <main class="dashboard">
+
+        <div class="dashboard-header">
+
+            <h1>Admin Dashboard</h1>
+
+            <p>
+                Monitor waste requests and collection operations.
+            </p>
+
+        </div>
+
+
+        <!-- STATISTICS -->
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <span>Total Requests</span>
+
+                <strong id="adminTotal">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>Pending</span>
+
+                <strong id="adminPending">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>Assigned</span>
+
+                <strong id="adminAssigned">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>Completed</span>
+
+                <strong id="adminCompleted">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- REQUEST MANAGEMENT -->
+
+        <section class="panel">
+
+            <h2>Waste Pickup Requests</h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Waste</th>
+
+                            <th>Quantity</th>
+
+                            <th>Address</th>
+
+                            <th>Date</th>
+
+                            <th>Status</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="adminRequestTable">
+
+                        <tr>
+
+                            <td
+                                colspan="7"
+                                style="text-align:center;">
+
+                                No requests available.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- USERS -->
+
+        <section class="panel">
+
+            <h2>Registered Users</h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Name</th>
+
+                            <th>Email</th>
+
+                            <th>Phone</th>
+
+                            <th>Role</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="adminUserTable">
+
+                        <tr>
+
+                            <td
+                                colspan="4"
+                                style="text-align:center;">
+
+                                No registered users.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+

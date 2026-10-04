@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoTrack - Collector Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="dashboard-body">
+
+    <!-- ==========================================
+         NAVBAR
+         ========================================== -->
+
+    <header class="dashboard-nav">
+
+        <div class="logo">
+            ♻ EcoTrack
+        </div>
+
+        <div class="user-info">
+
+            <span>
+                Waste Collector
+            </span>
+
+            <div class="avatar">
+                C
+            </div>
+
+            <button
+                class="logout-btn"
+                onclick="logout()">
+                Logout
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         MAIN DASHBOARD
+         ========================================== -->
+
+    <main class="dashboard">
+
+        <div class="dashboard-header">
+
+            <h1>Collector Dashboard</h1>
+
+            <p>
+                View assigned waste pickups and update collection status.
+            </p>
+
+        </div>
+
+
+        <!-- ======================================
+             STATISTICS
+             ====================================== -->
+
+        <div class="dashboard-cards">
+
+            <div class="dashboard-card">
+
+                <span>Total Requests</span>
+
+                <strong id="collectorTotal">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>Pending</span>
+
+                <strong id="collectorPending">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>Assigned</span>
+
+                <strong id="collectorAssigned">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="dashboard-card">
+
+                <span>Completed</span>
+
+                <strong id="collectorCompleted">
+                    0
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- ======================================
+             ASSIGNED REQUESTS
+             ====================================== -->
+
+        <section class="panel">
+
+            <h2>Assigned Waste Requests</h2>
+
+            <div class="table-wrapper">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>ID</th>
+
+                            <th>Waste Type</th>
+
+                            <th>Quantity</th>
+
+                            <th>Pickup Address</th>
+
+                            <th>Date</th>
+
+                            <th>Time</th>
+
+                            <th>Status</th>
+
+                            <th>Action</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody id="collectorRequestTable">
+
+                        <tr>
+
+                            <td
+                                colspan="8"
+                                style="text-align:center;">
+
+                                No assigned requests.
+
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             COLLECTION INFORMATION
+             ====================================== -->
+
+        <section class="panel">
+
+            <h2>Collection Instructions</h2>
+
+            <p style="font-size:11px; color:#64748b;">
+
+                Collect the assigned waste from the specified
+                location and update the request after successful
+                collection.
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
+

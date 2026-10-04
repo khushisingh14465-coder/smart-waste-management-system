@@ -1,0 +1,4 @@
+[USERS]
+1|Rahul|rahul@gmail.com|9876543210|Citizen|1234
+[REQUESTS]
+1|Rahul|plastic|Medium|Bhubaneswer|2026-10-04|Morning|Pickup from front gate| Assigned
